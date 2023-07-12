@@ -9,13 +9,18 @@
 
 # COMMAND ----------
 
-a = 5
-a
+
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## Data load
+# MAGIC ## Base load
+# MAGIC    - undersampling
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ## Feature addition
 
 # COMMAND ----------
 
@@ -23,16 +28,13 @@ a
 
 data = spark.sql('select * from sbx_ci_catalog.msp_database.cm2_baze_pokusny_vzorek')
 
-data.display()#
-
-# COMMAND ----------
-
-
+data.display()
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ## Data preparation
+# MAGIC    - remove columns with all missing values
 # MAGIC    - missing imputation
 # MAGIC    - standard scaling
 # MAGIC    - one hot encoding
@@ -55,7 +57,7 @@ data.display()#
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## Train/Test/valid split
+# MAGIC ## Train/Test/Valid split
 
 # COMMAND ----------
 
@@ -66,7 +68,7 @@ data.display()#
 # MAGIC %md
 # MAGIC ## Model definition
 # MAGIC    - we want to do ensamble models, so we will define several different models here
-# MAGIC    - logistic regression, XGBoost, ...
+# MAGIC    - logistic regression, XGBoost, Random forest
 
 # COMMAND ----------
 
@@ -100,11 +102,10 @@ data.display()#
 # MAGIC ## Evaluation
 # MAGIC    - ROC, Gini
 # MAGIC    - Lift, Gain chart
-# MAGIC    - Confusion matrix, F1 score, precision, and recall
+# MAGIC    - Confusion matrix, accuracy, F1 score, precision, and recall
 # MAGIC    - Features with high intercorrelation
 
 # COMMAND ----------
-
 
 
 
@@ -113,6 +114,7 @@ data.display()#
 # MAGIC %md
 # MAGIC ## Variable explanation
 # MAGIC    - feature importances
+# MAGIC    - shapley
 # MAGIC    - partial dependence plot
 
 # COMMAND ----------
