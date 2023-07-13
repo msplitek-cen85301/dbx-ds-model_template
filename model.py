@@ -9,12 +9,15 @@
 
 # COMMAND ----------
 
-
+# MAGIC %md
+# MAGIC ## Choice of tempate complexity
+# MAGIC    - parameters for each step
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ## Base load
+# MAGIC    - target definiton?
 # MAGIC    - undersampling
 
 # COMMAND ----------
@@ -28,7 +31,7 @@
 
 data = spark.sql('select * from sbx_ci_catalog.msp_database.cm2_baze_pokusny_vzorek')
 
-data.display()
+data.display()data.display()
 
 # COMMAND ----------
 
