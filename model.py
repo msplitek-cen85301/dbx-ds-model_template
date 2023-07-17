@@ -10,12 +10,6 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## Choice of tempate complexity
-# MAGIC    - parameters for each step
-
-# COMMAND ----------
-
-# MAGIC %md
 # MAGIC ## Base load
 # MAGIC    - target definiton?
 # MAGIC    - undersampling
@@ -44,10 +38,6 @@ data.display()data.display()
 
 # COMMAND ----------
 
-
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC ## Feature selection
 # MAGIC    - univariate selection
@@ -55,16 +45,8 @@ data.display()data.display()
 
 # COMMAND ----------
 
-
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC ## Train/Test/Valid split
-
-# COMMAND ----------
-
-
 
 # COMMAND ----------
 
@@ -75,10 +57,6 @@ data.display()data.display()
 
 # COMMAND ----------
 
-
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC ## Hyperparameter tuning
 # MAGIC    - Grid search
@@ -86,18 +64,10 @@ data.display()data.display()
 
 # COMMAND ----------
 
-
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC ## Model training
 # MAGIC    - separate models
 # MAGIC    - ensamble model
-
-# COMMAND ----------
-
-
 
 # COMMAND ----------
 
@@ -110,16 +80,8 @@ data.display()data.display()
 
 # COMMAND ----------
 
-
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC ## Calibration
-
-# COMMAND ----------
-
-
 
 # COMMAND ----------
 
@@ -131,23 +93,17 @@ data.display()data.display()
 
 # COMMAND ----------
 
-
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC ## Documentation
 # MAGIC    - write Evaluation and Explanation into html file
 
 # COMMAND ----------
 
-
+# MAGIC %md
+# MAGIC ## Choice of tempate complexity
+# MAGIC    - parameters for each step
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ## Save final model
-
-# COMMAND ----------
-
-
